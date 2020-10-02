@@ -1,9 +1,9 @@
-import { build, BuildOptions, BuildResult } from 'esbuild';
+import { BuildOptions, buildSync } from 'esbuild';
 
-export function bundle(): Promise<BuildResult> {
+export function bundle(): void {
     const options: BuildOptions = {
         color: true,
-        entryPoints: ['./src/index.ts'],
+        entryPoints: ['./dist/bootstrap.js'],
         outfile: './dist/index.js',
         bundle: true,
         sourcemap: true,
@@ -12,5 +12,5 @@ export function bundle(): Promise<BuildResult> {
         logLevel: 'error',
     };
 
-    return build(options);
+    buildSync(options);
 }

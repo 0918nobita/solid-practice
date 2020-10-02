@@ -9,7 +9,7 @@ module.exports = {
     ignorePatterns: ['node_modules', 'dist'],
     overrides: [
         {
-            files: ['**/*.ts'],
+            files: ['**/*.ts', '**/*.tsx'],
             extends: [
                 'plugin:@typescript-eslint/recommended',
                 'prettier/@typescript-eslint',

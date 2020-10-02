@@ -12,7 +12,9 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "jsxFactory": "h"
   },
   "include": [
     "src"
