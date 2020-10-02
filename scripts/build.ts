@@ -1,5 +1,3 @@
-import { build } from 'esbuild';
+import { bundle } from './bundle';
 
-import { buildOptions } from './buildOptions';
-
-build(buildOptions);
+bundle();
