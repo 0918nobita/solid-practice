@@ -1,5 +1,8 @@
 import { build, BuildOptions } from 'esbuild';
 
+/**
+ * Bundle JavaScript sources, then minify them if `NODE_ENV` environment variable is set to `production`
+ */
 export async function bundle(): Promise<void> {
     const baseOptions: BuildOptions = {
         color: true,
