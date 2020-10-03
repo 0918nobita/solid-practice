@@ -7,5 +7,5 @@ export function transpile(): void {
         sourceMaps: 'both',
         comments: false,
     });
-    fs.writeFileSync('dist/bootstrap.js', result.code);
+    fs.writeFileSync('dist/index.transpiled.js', result.code);
 }
